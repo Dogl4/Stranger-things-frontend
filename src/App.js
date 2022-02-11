@@ -9,7 +9,7 @@ function App() {
   const DEV = (process.env.REACT_APP_DEV === 'true');
   return (
     <div className="App">
-      { DEV ? <h1>Em Desenvolvimento</h1> : null }
+      { DEV ? <h1>Em desenvolvimento</h1> : null }
       { console.log(process.env) }
       <StrangerThings />
     </div>

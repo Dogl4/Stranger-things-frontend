@@ -5,12 +5,12 @@ import StrangerThings from './components/StrangerThings';
 
 require('dotenv').config();
 
-const DEV = (process.env.REACT_APP_DEV === 'true');
-
 function App() {
+  const DEV = (process.env.REACT_APP_DEV === 'true');
   return (
     <div className="App">
       { DEV ? <h1>Em Desenvolvimento</h1> : null }
+      { console.log(process.env) }
       <StrangerThings />
     </div>
   );
